@@ -70,3 +70,10 @@ SELECT * FROM xyzzy
 -- name: Thud
 SELECT * FROM thud;
 SELECT * FROM thud2;
+
+-- name: AnotherMultiline
+SELECT '
+-- name: AnotherMultiline
+' FROM AnotherMultiline -- this is a comment
+    -- yet another comment
+    WHERE id = 123;
